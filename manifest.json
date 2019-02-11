@@ -9,13 +9,16 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-
   "content_scripts": [
     {
-      "matches": ["*://*/*", "file://*/*"],
+      "matches": ["https://github.com/*/*/pull/*"],
       "css": ["src/custom.css"],
-      "js": ["src/custom.js"]
+      "js": ["src/custom.js"],
+      "run_at": "document_start"
     }
-  ]
-
+  ],
+  "browser_action": {
+    "default_popup": "src/popup.html"
+  },
+  "permissions": ["storage", "activeTab"]
 }

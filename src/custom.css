@@ -1,0 +1,5 @@
+body.github-pr-cleanup-enabled .discussion-item-base_ref_force_pushed,
+body.github-pr-cleanup-enabled .discussion-item-head_ref_force_pushed,
+body.github-pr-cleanup-enabled .discussion-item-deployed {
+  display: none !important;
+}
